@@ -4,13 +4,13 @@
 ## Tasks:
 
 # A Simple To-Do List Application
-tasks = []  # List to store tasks
+ tasks = []  # List to store tasks
 
-def add_new_task(task_name):
+ def add_new_task(task_name):
     """Adds a new task to the list"""
     tasks.append({'name': task_name, 'completed': False})
 
-def show_all_tasks():
+ def show_all_tasks():
     """Displays all tasks in the list"""
     if len(tasks) == 0:
         print("No tasks added yet!")
@@ -21,7 +21,7 @@ def show_all_tasks():
         status = "✔ Done" if t['completed'] else "✗ Pending"
         print(f"{i + 1}. {t['name']} - {status}")
 
-def complete_task(task_index):
+ def complete_task(task_index):
     """Marks a task as completed"""
     if task_index >= 0 and task_index < len(tasks):
         tasks[task_index]['completed'] = True
@@ -29,7 +29,7 @@ def complete_task(task_index):
     else:
         print("Invalid task number. Please try again.")
 
-def remove_task(task_index):
+ def remove_task(task_index):
     """Removes a task from the list"""
     if task_index >= 0 and task_index < len(tasks):
         deleted_task = tasks.pop(task_index)
@@ -37,7 +37,7 @@ def remove_task(task_index):
     else:
         print("Invalid task number. Please try again.")
 
-if __name__ == "__main__":
+ if __name__ == "__main__":
     print("Welcome to the To-Do List Manager!")
     
     while True:
