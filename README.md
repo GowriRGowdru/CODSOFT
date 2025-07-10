@@ -4,6 +4,8 @@
 ## Tasks:
 
 # A Simple To-Do List Application
+
+
  tasks = []  # List to store tasks
 
  def add_new_task(task_name):
@@ -75,6 +77,8 @@
 
 
 # Simple Calculator
+
+
 def calculator():
     while True:
         try:
@@ -108,6 +112,8 @@ if __name__ == "__main__":
 
 
 # Password Generator
+
+
 import random
 import string
 
@@ -139,6 +145,8 @@ if __name__ == "__main__":
 
 
 # Rock-Paper-Secissors Game
+
+
 import random
 
 def play_game():
@@ -182,6 +190,7 @@ if __name__ == "__main__":
 
 
 # contacts book
+
 
 contacts = []
 def add_contact(name, phone, email, address):
