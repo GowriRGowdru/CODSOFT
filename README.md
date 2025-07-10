@@ -2,7 +2,7 @@
  This repository contains Python projects for the internship
 
 ## Tasks:
-1. To-Do List Application: Command-line app to manage tasks efficiently.
+
 # A Simple To-Do List Application
 tasks = []  # List to store tasks
 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
             print("Invalid input. Please enter a valid number.")
 
 
-2. Simple Calculator: Performs basic arithmetic operations.
+
 # Simple Calculator
 def calculator():
     while True:
@@ -107,7 +107,6 @@ if __name__ == "__main__":
     calculator()
 
 
-3. Password Generator: Generates secure random passwords.
 # Password Generator
 import random
 import string
@@ -139,7 +138,6 @@ if __name__ == "__main__":
 
 
 
-4. Rock-Paper-Secissors Game: Play the classic game with a computer opponent.
 # Rock-Paper-Secissors Game
 import random
 
@@ -183,10 +181,9 @@ if __name__ == "__main__":
     play_game()
 
 
-5. Contact Book: Manage and organize contact details.
 # contacts book
-contacts = []
 
+contacts = []
 def add_contact(name, phone, email, address):
     contact = {
         "name": name,
@@ -204,7 +201,6 @@ def view_contacts():
         print("\nContact List:")
         for idx, contact in enumerate(contacts):
             print(f"{idx + 1}. Name: {contact['name']}, Phone: {contact['phone']}")
-
 def search_contact(query):
     results = [contact for contact in contacts if query.lower() in contact['name'].lower() or query in contact['phone']]
     if results:
@@ -213,21 +209,18 @@ def search_contact(query):
             print(f"Name: {contact['name']}, Phone: {contact['phone']}, Email: {contact['email']}, Address: {contact['address']}")
     else:
         print("No matching contact found!")
-
 def update_contact(index, name, phone, email, address):
     if 0 <= index < len(contacts):
         contacts[index] = {"name": name, "phone": phone, "email": email, "address": address}
         print("Contact updated successfully!")
     else:
         print("Invalid contact number!")
-
 def delete_contact(index):
     if 0 <= index < len(contacts):
         removed_contact = contacts.pop(index)
         print(f"Deleted contact: {removed_contact['name']}")
     else:
         print("Invalid contact number!")
-
 if __name__ == "__main__":
     print("Welcome to the Contact Book App!")
     while True:
